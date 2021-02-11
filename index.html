@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="titles">
+            <h1>Lucas Bouillon</h1>
+            <h2>Développeur web</h2>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="#about">accueil</a>
+            <a href="#education">formation</a>
+            <a href="#skills">compétences</a>
+            <a href="#portfolio">projets</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+            </a>
+        </div>
+    </header>
+
+    <section id="about">    
+        <h2 class="welcome_msg">Bienvenue sur mon portfolio</h2>
+        <a href="DOCS/CV.pdf" class="dl_cv" target="_blank">TÉLÉCHARGER CV</a>
+
+        <div class="wrapper1">
+            <div class="about_img">
+                <img src="IMG/lucas.jpeg" id="img_1" alt="profile_picture">
+            </div>
+    
+            <div class="about_content">
+                <h3>Qui suis-je ?</h3>
+                <p>Bonjour, moi c'est Lucas, je suis un jeune étudiant, passionné du développement web. J’ai beaucoup d’ambitions dans ce domaine, je suis plus orienté dans le développement front-end. Je suis en licence informatique à l’université du Maine et parallèlement j'ai suivi une formation "Développeur Web" en ligne. Dans cette formation, j'ai réalisé différents projets comme un site vitrine pour une agence de voyage, un jeu snake en javascript, un portfolio et d'autres.. Dernièrement j'ai réalisé un site web personnel sur le thème de la photographie qui est ma seconde passion.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="education_title">
+            <h2>FORMATION</h2>
+            <hr class="style-one">
+        </div>
+        <div class="wrapper2">
+            <div class="timeline">
+                <div class="container left">
+                  <div class="content">
+                    <h2>2014</h2>
+                    <hr>
+                    <h4>Diplôme national du brevet | Collège La Madeleine</h4>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <h2>2018</h2>
+                    <hr>
+                    <h4>Baccalauréat STI2D | Lycée Touchard</h4>
+                  </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                      <h2>2019</h2>
+                      <hr>
+                      <h4>Formation développeur web | apprendre-a-coder.com</h4>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                      <h2>2020</h2>
+                      <hr>
+                      <h4>L1 Informatique | Université du Maine</h4>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                      <h2>2021</h2>
+                      <hr>
+                      <h4>L2 Informatique | Université du Maine</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="skill_title">
+            <h2>COMPÉTENCES</h2>
+            <hr class="style-one">
+        </div>
+        <div class="wrapper3">
+            <div class="html">
+                <p>HTML</p>
+                <div class="skill_bar"><div class="html_color"><div><p>95%</p></div></div></div>
+            </div>
+            <div class="css">
+                <p>CSS</p>
+                <div class="skill_bar"><div class="css_color"><div><p>90%</p></div></div></div>
+            </div>
+            <div class="bootstrap">
+                <p>BOOTSTRAP</p>
+                <div class="skill_bar"><div class="bootstrap_color"><div><p>60%</p></div></div></div>
+            </div>
+            <div class="js">
+                <p>JAVASCRIPT</p>
+                <div class="skill_bar"><div class="js_color"><div><p>60%</p></div></div></div>
+            </div>
+            <div class="php">
+                <p>PHP</p>
+                <div class="skill_bar"><div class="php_color"><div><p>40%</p></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="portfolio_title">
+            <h2>MES PROJETS</h2>
+            <hr class="style-one">
+        </div>
+
+        <div class="projets">
+            <div class="container2" id="img1">
+                <a href="https://travelagency.lbfocus.com/" target="_blank"><img src="IMG/travel.jpeg" alt="travel_agency" style="width:100%;"></a>
+                <div class="content2" id="content1">
+                    <h3>Projet "Travel Agency"</h3>
+                    <p>Site vitrine realisé en HTML/CSS/Bootstrap, dans le contexte 
+                      de la formation "Développeur web" de John Taieb afin d'apprendre le HTML/CSS.</p>
+                    <p>Auteur : Lucas Bouillon</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projets">
+            <div class="container2" id="img2">
+                <a href="https://lbfocus.com/" target="_blank"><img src="IMG/lbfocus.jpeg" alt="lbfocus" style="width:100%;"></a>
+                <div class="content2" id="content2">
+                  <h3>Projet "lbfocus"</h3>
+                  <p>Site complet réalisé en HTML/CSS/JS/PHP, sans contexte particulier, simplement par plaisir et désir de progression.</p>
+                  <p>Auteur : Lucas Bouillon</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projets">
+            <div class="container2" id="img3">
+                <a href="https://snake.lbfocus.com/" target="_blank"><img src="IMG/snake.jpeg" alt="snake" style="width:100%;"></a>
+                <div class="content2" id="content3">
+                  <h3>Projet "Snake"</h3>
+                  <p>Jeu snake réalisé en HTML/JS, une seconde fois dans le contexte de la formation "Développeur web" avec pour but d'apprendre le Javascript.</p>
+                  <p>Auteur : Lucas Bouillon</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projets">
+            <div class="container2" id="img4"
+                <a href="https://top5actrices.lbfocus.com/" target="_blank"><img src="IMG/actrices.jpeg" alt="top5actrices" style="width:100%;"></a>
+                <div class="content2" id="content4">
+                  <h3>Projet "Top 5 meilleures actrices"</h3>
+                  <p>Ce projet à été réalise en HTML/CSS/JS/JQUERY, encore une fois dans le contexte de la formation, cette fois ci pour m'initier aux événements dynamiques.</p>
+                  <p>Auteur : Lucas Bouillon</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
