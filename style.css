@@ -376,11 +376,11 @@ header {
     margin: 0 auto;
 }
 
-.skill_bar, .html_color, .css_color, .js_color, .react_color, .bootstrap_color, .php_color{
+.skill_bar, .html_color, .css_color, .js_color, .react_color, .bootstrap_color, .php_color, .postgresql_color, .git_color{
     height: 45px;
 }
 
-.html_color, .css_color, .js_color, .react_color, .bootstrap_color, .php_color{
+.html_color, .css_color, .js_color, .react_color, .bootstrap_color, .php_color, .postgresql_color, .git_color{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -421,13 +421,23 @@ header {
     background-color: black; 
 }
 
+.postgresql_color{
+    width: 65%;
+    background-color: black; 
+}
+
+.git_color{
+    width: 75%;
+    background-color: black; 
+}
+
 /* PROJETS */
 
 #portfolio{
     width: auto;
     background-color: black;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 30px 0;
 }
 
 .portfolio_title{
@@ -439,7 +449,7 @@ header {
 }
 
 .projets{
-    width: 80%;
+    width: 90%;
     text-align: center;
     margin: 20px auto;
 }
@@ -474,4 +484,6 @@ header {
         font-size: 40%;
     }
 }
+
+
 
