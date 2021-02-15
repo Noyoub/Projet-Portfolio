@@ -1,12 +1,13 @@
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    background-color: whitesmoke;
 }
 
 * {
     box-sizing: border-box;
+    font-family: 'arial';
 }
 
 a {
@@ -35,48 +36,11 @@ hr.style-one:before {
     border-radius: 20px;
 }
 
-.welcome_msg  {
-    font-family: 'Sofia', cursive;
-    color: black;
-    text-align: center;
-    font-size: 280%;
-}
-
-@media screen and (max-width: 459px){
-    .welcome_msg {
-        font-size: 220%;
-    }
-}
-
-ion-icon {
-    font-size: 200%;
-    margin: 60px 15px;
-}
-
-.dl_cv{
-    display: block;
-    width: 220px;
-    text-align: center;
-    margin: 10px auto;
-    padding: 20px;
-    color:black;
-    border: 1px solid black;
-    transition: 0.2s ease-in-out;
-}
-
-.dl_cv:hover{
-    background-color: black;
-    color: white;
-}
-
-.section_title h2{
-    text-align: center;
-}
 
 /* HEADER */
 
 header {
-    background-color: white;
+    background-color: whitesmoke;
     width: auto;
     margin: 0 auto;
 }
@@ -86,15 +50,16 @@ header {
 }
 
 .titles h1 {
-    font-family: 'Sofia', cursive;
+    font-family: 'Optima';
     font-size: 300%;
     color: black;
 }
 
 
 .titles h2 {
-    font-family: 'Sofia', cursive;
-    font-size: 200%;
+    font-family: 'Arial';
+    text-transform: uppercase; 
+    font-size: 180%;
 }
 
 .topnav {
@@ -103,6 +68,7 @@ header {
 }
   
 .topnav a {
+    font-family: 'Arial';
     float: left;
     display: block;
     color: #f2f2f2;
@@ -127,8 +93,8 @@ header {
 .burger{
     width: 35px;
     height: 3px;
-    background-color: white;
-    margin: 6px 0;
+    background-color: whitesmoke;
+    margin: 4px 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -160,6 +126,44 @@ header {
     padding: 20px;
 }
 
+.welcome_msg  {
+    font-family: 'Optima';
+    color: black;
+    text-align: center;
+    font-size: 280%;
+}
+
+@media screen and (max-width: 459px){
+    .welcome_msg {
+        font-size: 220%;
+    }
+}
+
+ion-icon {
+    font-size: 200%;
+    margin: 60px 15px;
+}
+
+.dl_cv{
+    display: block;
+    width: 220px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+    color:black;
+    border: 1px solid black;
+    transition: 0.2s ease-in-out;
+}
+
+.dl_cv:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.section_title h2{
+    text-align: center;
+}
+
 .wrapper1 {
     width: auto;
     display: -webkit-box;
@@ -175,12 +179,12 @@ header {
 }
 
 .about_content h3{
-    font-family: 'Sofia', cursive;
+    font-family: 'Optima';
     font-size: 200%;
 }
 
 .about_content p{
-    font-family: 'times', cursive;
+    font-family: 'arial', cursive;
     font-size: 130%;
 }
 
@@ -222,11 +226,12 @@ header {
 }
 
 .education_title{
+    font-family: 'Optima';
     margin: 20px auto;
     font-size: 20px;
     width: 50%;
     text-align: center;
-    color: white;
+    color: whitesmoke;
 }
 
 @media screen and (max-width:550px){
@@ -249,7 +254,7 @@ header {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: white;
+    background-color: whitesmoke;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -270,7 +275,7 @@ header {
     width: 25px;
     height: 25px;
     right: -17px;
-    background-color: white;
+    background-color: whitesmoke;
     border: 4px solid black;
     top: 15px;
     border-radius: 50%;
@@ -293,9 +298,9 @@ header {
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid white;
+    border: medium solid whitesmoke;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent whitesmoke;
 }
 
 .right::before {
@@ -306,9 +311,9 @@ header {
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid white;
+    border: medium solid whitesmoke;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent whitesmoke transparent transparent;
 }
 
 .right::after {
@@ -317,7 +322,7 @@ header {
 
 .content {
     padding: 20px 30px;
-    background-color: white;
+    background-color: whitesmoke;
     position: relative;
     border-radius: 6px;
 }
@@ -335,9 +340,9 @@ header {
 
     .container::before {
         left: 60px;
-        border: medium solid white;
+        border: medium solid whitesmoke;
         border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
+        border-color: transparent whitesmoke transparent transparent;
     }
 
     .left::after, .right::after {
@@ -358,11 +363,16 @@ header {
 }
 
 .skill_title{
+    font-family: 'Optima';
     margin: 20px auto;
     font-size: 20px;
     width: 50%;
     text-align: center;
     color: black;
+}
+
+.nom_langage{
+    font-size: 20px;
 }
 
 @media screen and (max-width:550px){
@@ -384,7 +394,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: whitesmoke;
+}
+
+.html_color p, .css_color p, .js_color p, .react_color p, .bootstrap_color p, .php_color p, .postgresql_color p, .git_color p{
+    font-size: 20px;
 }
 
 .skill_bar{
@@ -392,7 +406,7 @@ header {
 }
 
 .skill_bar h3{
-    color: white;
+    color: whitesmoke;
     text-align: center;
 }
 
@@ -441,11 +455,12 @@ header {
 }
 
 .portfolio_title{
+    font-family: 'Optima';
     margin: 20px auto;
     font-size: 20px;
     width: 50%;
     text-align: center;
-    color: white;
+    color: whitesmoke;
 }
 
 .projets{
@@ -472,7 +487,7 @@ header {
 }
 
 .projets img{
-    border: 5px solid white;
+    border: 5px solid whitesmoke;
 }
 
 @media screen and (max-width:550px){
@@ -485,5 +500,40 @@ header {
     }
 }
 
+/* FOOTER */
+
+#footer{
+    width: auto;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.footer_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-instagram {
+    background: #125688;
+    color: whitesmoke;
+}  
 
 

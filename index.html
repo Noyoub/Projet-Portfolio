@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Ce site est un portfolio qui présente mes compétences et mes différents projets."> 
+    <meta name="keywords" content="portfolio,passion,objectif,html,le mans,développement,lucas bouillon,css,javascript,">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="IMG/logo.png">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Portfolio</title>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <title>Portfolio | Lucas Bouillon</title>
 </head>
 <body>
     <header>
         <div class="titles">
             <h1>Lucas Bouillon</h1>
-            <h2>Développeur web</h2>
+            <h2>Developpeur web</h2>
         </div>
         <div class="topnav" id="myTopnav">
             <a href="#about">accueil</a>
@@ -30,8 +35,10 @@
 
     <section id="about">    
         <h2 class="welcome_msg">Bienvenue sur mon portfolio</h2>
-        <a href="DOCS/CV.pdf" class="dl_cv" target="_blank">TÉLÉCHARGER CV</a>
-
+        <div class="centre">
+            <a href="DOCS/CV.pdf" class="dl_cv" target="_blank">TÉLÉCHARGER CV</a>
+        </div>
+        
         <div class="wrapper1">
             <div class="about_img">
                 <img src="IMG/lucas.jpeg" id="img_1" alt="profile_picture">
@@ -97,31 +104,31 @@
         </div>
         <div class="wrapper3">
             <div class="html">
-                <p>HTML</p>
+                <p class="nom_langage">HTML</p>
                 <div class="skill_bar"><div class="html_color"><div><p>95%</p></div></div></div>
             </div>
             <div class="css">
-                <p>CSS</p>
+                <p class="nom_langage">CSS</p>
                 <div class="skill_bar"><div class="css_color"><div><p>90%</p></div></div></div>
             </div>
             <div class="bootstrap">
-                <p>BOOTSTRAP</p>
+                <p class="nom_langage">BOOTSTRAP</p>
                 <div class="skill_bar"><div class="bootstrap_color"><div><p>60%</p></div></div></div>
             </div>
             <div class="js">
-                <p>JAVASCRIPT</p>
+                <p class="nom_langage">JAVASCRIPT</p>
                 <div class="skill_bar"><div class="js_color"><div><p>60%</p></div></div></div>
             </div>
             <div class="php">
-                <p>PHP</p>
+                <p class="nom_langage">PHP</p>
                 <div class="skill_bar"><div class="php_color"><div><p>40%</p></div></div></div>
             </div>
             <div class="postgresql">
-                <p>POSTGRESQL</p>
+                <p class="nom_langage">POSTGRESQL</p>
                 <div class="skill_bar"><div class="postgresql_color"><div><p>65%</p></div></div></div>
             </div>
             <div class="git">
-                <p>GIT/GITHUB</p>
+                <p class="nom_langage">GIT/GITHUB</p>
                 <div class="skill_bar"><div class="git_color"><div><p>75%</p></div></div></div>
             </div>
         </div>
@@ -177,8 +184,14 @@
                 </div>
             </div>
         </div>
-
     </section>
+    <section id="footer">
+        <div class="footer_items">
+            <a href="#" class="fa fa-instagram"></a>
+            
+        </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

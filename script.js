@@ -1,3 +1,6 @@
+//Animations des projets avec scrollreveal
+ScrollReveal().reveal('.projets', { delay: 300, origin: 'bottom', distance: '50px', scale: 0.5});
+
 //Gestion du menu responsive
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -32,4 +35,5 @@ containers[3].addEventListener("mouseenter", function(){
   contents[3].style.visibility="visible"; });
 containers[3].addEventListener("mouseleave", function(){ 
   contents[3].style.visibility="hidden"; });
+
 
