@@ -500,40 +500,5 @@ ion-icon {
     }
 }
 
-/* FOOTER */
-
-#footer{
-    width: auto;
-    background-color: whitesmoke;
-    margin: 0 auto;
-    padding: 30px 0;
-}
-
-.footer_items{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.fa {
-    padding: 15px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-.fa-instagram {
-    background: #125688;
-    color: whitesmoke;
-}  
 
 
