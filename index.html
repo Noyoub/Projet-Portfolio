@@ -7,54 +7,54 @@
     <meta name="description" content="Ce site est un portfolio qui présente mes compétences et mes différents projets."> 
     <meta name="keywords" content="portfolio,passion,objectif,html,le mans,développement,lucas bouillon,css,javascript,">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="IMG/logo.png">
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <title>Portfolio | Lucas Bouillon</title>
 </head>
 <body>
+
+<!-- Menu de navigation -->
+
     <header>
-        <div class="titles">
-            <h1>Lucas Bouillon</h1>
-            <h2>Developpeur web</h2>
-        </div>
-        <div class="topnav" id="myTopnav">
-            <a href="#about">accueil</a>
-            <a href="#education">formation</a>
-            <a href="#skills">compétences</a>
-            <a href="#portfolio">projets</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <div class="burger"></div>
-                <div class="burger"></div>
-                <div class="burger"></div>
-            </a>
-        </div>
+        <a href="#" class="logo">Port<span>folio.</span></a>
+        <ul>
+            <li><a href="#about" onclick="myFunction2()">Home</a></li>
+            <li><a href="#education" onclick="myFunction2()">Studies</a></li>
+            <li><a href="#skills" onclick="myFunction2()">Skills</a></li>
+            <li><a href="#portfolio" onclick="myFunction2()">Projects</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </header>
 
+<!-- Section About -->
+
     <section id="about">    
-        <h2 class="welcome_msg">Bienvenue sur mon portfolio</h2>
-        <div class="centre">
-            <a href="DOCS/CV.pdf" class="dl_cv" target="_blank">TÉLÉCHARGER CV</a>
+        <div class="about_txt">
+            <div class="title">
+                <h1><span>Lucas</span> <span class="bouillon">Bouillon</span></h1>
+                <h2></h2>
+            </div>
+            <div class="button">
+                <a href="DOCS/CV.pdf" class="dl_cv" target="_blank">TÉLÉCHARGER CV</a>
+            </div>
         </div>
-        
-        <div class="wrapper1">
-            <div class="about_img">
-                <img src="IMG/lucas.jpeg" id="img_1" alt="profile_picture">
-            </div>
-    
-            <div class="about_content">
-                <h3>Qui suis-je ?</h3>
-                <p>Bonjour, moi c'est Lucas, je suis un jeune étudiant, passionné du développement web. J’ai beaucoup d’ambitions dans ce domaine, je suis plus orienté dans le développement front-end. Je suis en licence informatique à l’université du Maine et parallèlement j'ai suivi une formation "Développeur Web" en ligne. Dans cette formation, j'ai réalisé différents projets comme un site vitrine pour une agence de voyage, un jeu snake en javascript, un portfolio et d'autres.. Dernièrement j'ai réalisé un site web personnel sur le thème de la photographie qui est ma seconde passion.</p>
-            </div>
+        <div class="about_img">
+            <img src="IMG/lucas.png" alt="photo de lucas" id="lucas_img">
         </div>
     </section>
 
+<!-- Section Education -->
+
     <section id="education">
-        <div class="education_title">
-            <h2>FORMATION</h2>
-            <hr class="style-one">
+        <div class="section_title_light">
+            <h2>STU<span>DI</span>ES</h2>
         </div>
         <div class="wrapper2">
             <div class="timeline">
@@ -62,130 +62,144 @@
                   <div class="content">
                     <h2>2014</h2>
                     <hr>
-                    <h4>Diplôme national du brevet | Collège La Madeleine</h4>
+                    <h4><span class="bold">Diplôme national du brevet</span> | Collège La Madeleine</h4>
                   </div>
                 </div>
                 <div class="container right">
                   <div class="content">
                     <h2>2018</h2>
                     <hr>
-                    <h4>Baccalauréat STI2D | Lycée Touchard</h4>
+                    <h4><span class="bold">Baccalauréat STI2D</span> | Lycée Touchard</h4>
                   </div>
                 </div>
                 <div class="container left">
                     <div class="content">
                       <h2>2019</h2>
                       <hr>
-                      <h4>Formation développeur web | apprendre-a-coder.com</h4>
+                      <h4><span class="bold">Formation développeur web</span> | apprendre-a-coder.com</h4>
                     </div>
                 </div>
                 <div class="container right">
                     <div class="content">
                       <h2>2020</h2>
                       <hr>
-                      <h4>L1 Informatique | Université du Maine</h4>
+                      <h4><span class="bold">L1 Informatique</span> | Université du Maine</h4>
                     </div>
                 </div>
                 <div class="container left">
                     <div class="content">
                       <h2>2021</h2>
                       <hr>
-                      <h4>L2 Informatique | Université du Maine</h4>
+                      <h4><span class="bold">L2 Informatique</span> | Université du Maine</h4>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
+
+<!-- Section Skills -->
 
     <section id="skills">
-        <div class="skill_title">
-            <h2>COMPÉTENCES</h2>
-            <hr class="style-one">
+        <div class="section_title_dark">
+            <h2>SK<span>IL</span>LS</h2>
         </div>
-        <div class="wrapper3">
+        <div class="wrapper_dev">
             <div class="html">
-                <p class="nom_langage">HTML</p>
+                <div class="langage">
+                    <img src="https://img.icons8.com/color/480/000000/html-5.png" alt="logo html"/>
+                    <p class="nom_langage">HTML</p>
+                </div>
                 <div class="skill_bar"><div class="html_color"><div><p>95%</p></div></div></div>
             </div>
             <div class="css">
-                <p class="nom_langage">CSS</p>
+                <div class="langage">
+                    <img src="https://img.icons8.com/color/480/000000/css3.png" alt="logo css"/>
+                    <p class="nom_langage">CSS</p>
+                </div>
                 <div class="skill_bar"><div class="css_color"><div><p>90%</p></div></div></div>
             </div>
             <div class="bootstrap">
-                <p class="nom_langage">BOOTSTRAP</p>
+                <div class="langage">
+                    <img src="https://img.icons8.com/color/480/000000/bootstrap.png" alt="logo bootstrap"/>
+                    <p class="nom_langage">BOOTSTRAP</p>
+                </div>
                 <div class="skill_bar"><div class="bootstrap_color"><div><p>60%</p></div></div></div>
             </div>
             <div class="js">
-                <p class="nom_langage">JAVASCRIPT</p>
+                <div class="langage">
+                    <img src="https://img.icons8.com/color/480/000000/javascript-logo-1.png" alt="logo javascript"/>
+                    <p class="nom_langage">JAVASCRIPT</p>
+                </div>
                 <div class="skill_bar"><div class="js_color"><div><p>60%</p></div></div></div>
             </div>
             <div class="php">
-                <p class="nom_langage">PHP</p>
+                <div class="langage">
+                    <img src="https://img.icons8.com/officel/160/000000/php-logo.png" alt="logo php"/>
+                    <p class="nom_langage">PHP</p>
+                </div>
                 <div class="skill_bar"><div class="php_color"><div><p>40%</p></div></div></div>
             </div>
             <div class="postgresql">
-                <p class="nom_langage">POSTGRESQL</p>
+                <div class="langage">
+                    <img src="https://img.icons8.com/color/96/000000/postgreesql.png" alt="logo postgresql"/>
+                    <p class="nom_langage">POSTGRESQL</p>
+                </div>
                 <div class="skill_bar"><div class="postgresql_color"><div><p>65%</p></div></div></div>
             </div>
             <div class="git">
-                <p class="nom_langage">GIT/GITHUB</p>
+                <div class="langage">
+                    <img src="https://img.icons8.com/cute-clipart/128/000000/github.png" alt="logo github"/>                 
+                    <p class="nom_langage">GIT/GITHUB</p>
+                </div>
                 <div class="skill_bar"><div class="git_color"><div><p>75%</p></div></div></div>
             </div>
         </div>
     </section>
 
+<!-- Section Portfolio -->
+
     <section id="portfolio">
-        <div class="portfolio_title">
-            <h2>MES PROJETS</h2>
-            <hr class="style-one">
+        <div class="section_title_light">
+            <h2>PROJ<span>EC</span>TS</h2>
         </div>
+        <div class="portfolio_content">
+            <div class="card c1">
+                <img src="IMG/travel.jpeg" alt="site agence de voyage" style="width:100%">
+                <h1>Travel Agency</h1>
+                <p class="titre">Auteur : Lucas Bouillon</p>
+                <p>Site vitrine realisé en <span class="bold">HTML/CSS/Bootstrap</span>, dans le contexte 
+                    de la formation "Développeur web" de John Taieb afin d'apprendre le HTML/CSS.</p>
+                <a href="https://travelagency.lbfocus.com/" target="_blank"><button class=".btn">Voir plus</button></p></a><p>
+            </div>
 
-        <div class="projets">
-            <div class="container2">
-                <a href="https://travelagency.lbfocus.com/" target="_blank"><img src="IMG/travel.jpeg" alt="travel_agency" style="width:100%;"></a>
-                <div class="content2">
-                    <h3>Projet "Travel Agency"</h3>
-                    <p>Site vitrine realisé en HTML/CSS/Bootstrap, dans le contexte 
-                      de la formation "Développeur web" de John Taieb afin d'apprendre le HTML/CSS.</p>
-                    <p>Auteur : Lucas Bouillon</p>
-                </div>
+            <div class="card c2">
+                <img src="IMG/actrices.jpeg" alt="site top 5 meilleures actrices" style="width:100%">
+                <h1>Top 5 meilleures actrices</h1>
+                <p class="titre">Auteur : Lucas Bouillon</p>
+                <p>Ce projet à été réalise en <span class="bold">HTML/CSS/JS/JQUERY</span>, encore une fois dans le contexte de la formation, cette fois ci pour m'initier aux événements dynamiques.</p>
+                <a href="https://top5actrices.lbfocus.com/" target="_blank"><button class=".btn">Voir plus</button></p></a><p>
             </div>
         </div>
 
-        <div class="projets">
-            <div class="container2">
-                <a href="https://lbfocus.com/" target="_blank"><img src="IMG/lbfocus.jpeg" alt="lbfocus" style="width:100%;"></a>
-                <div class="content2">
-                  <h3>Projet "lbfocus"</h3>
-                  <p>Site complet réalisé en HTML/CSS/JS/PHP, sans contexte particulier, simplement par plaisir et désir de progression.</p>
-                  <p>Auteur : Lucas Bouillon</p>
-                </div>
+        <div class="portfolio_content">
+            <div class="card c3">
+                <img src="IMG/snake.jpeg" alt="site agence de voyage" style="width:100%">
+                <h1>Snake</h1>
+                <p class="titre">Auteur : Lucas Bouillon</p>
+                <p>Jeu snake réalisé en <span class="bold">HTML/JS</span>, une seconde fois dans le contexte de la formation "Développeur web" pour apprendre le Javascript.</p>
+                <a href="https://snake.lbfocus.com/" target="_blank"><button class=".btn">Voir plus</button></p></a><p>
             </div>
-        </div>
 
-        <div class="projets">
-            <div class="container2">
-                <a href="https://snake.lbfocus.com/" target="_blank"><img src="IMG/snake.jpeg" alt="snake" style="width:100%;"></a>
-                <div class="content2">
-                  <h3>Projet "Snake"</h3>
-                  <p>Jeu snake réalisé en HTML/JS, une seconde fois dans le contexte de la formation "Développeur web" avec pour but d'apprendre le Javascript.</p>
-                  <p>Auteur : Lucas Bouillon</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="projets">
-            <div class="container2">
-                <a href="https://top5actrices.lbfocus.com/" target="_blank"><img src="IMG/actrices.jpeg" alt="top5actrices" style="width:100%;"></a>
-                <div class="content2">
-                  <h3>Projet "Top 5 meilleures actrices"</h3>
-                  <p>Ce projet à été réalise en HTML/CSS/JS/JQUERY, encore une fois dans le contexte de la formation, cette fois ci pour m'initier aux événements dynamiques.</p>
-                  <p>Auteur : Lucas Bouillon</p>
-                </div>
+            <div class="card c4">
+                <img src="IMG/lbfocus.jpeg" alt="site top 5 meilleures actrices" style="width:100%">
+                <h1>Lbfocus</h1>
+                <p class="titre">Auteur : Lucas Bouillon</p>
+                <p>Site complet réalisé en <span class="bold">HTML/CSS/JS/PHP</span>, sans contexte particulier, simplement par plaisir et désir de progression.</p>
+                <a href="https://lbfocus.com/" target="_blank"><button class=".btn">Voir plus</button></p></a><p>
             </div>
         </div>
     </section>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,39 +1,61 @@
-//Animations des projets avec scrollreveal
-ScrollReveal().reveal('.projets', { delay: 300, origin: 'bottom', distance: '50px', scale: 0.5});
-
 //Gestion du menu responsive
+
+var x = document.querySelector("header ul");
+
 function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
 }
 
-//Gestion affichage des descriptions des projets
-var containers = document.getElementsByClassName('container2');
-var contents = document.getElementsByClassName('content2');
+function myFunction2() {
+  if(window.innerWidth <= 1080)
+    x.style.display = "none";
+}
 
+//Animation titre
 
-containers[0].addEventListener("mouseenter", function(){ 
-  contents[0].style.visibility="visible"; });
-containers[0].addEventListener("mouseleave", function(){ 
-  contents[0].style.visibility="hidden"; });
+const txtAnim = document.querySelector('.title h2');
 
-containers[1].addEventListener("mouseenter", function(){ 
-  contents[1].style.visibility="visible"; });
-containers[1].addEventListener("mouseleave", function(){ 
-  contents[1].style.visibility="hidden"; });
+new Typewriter(txtAnim, {
+  deleteSpeed: 30
+})
+.changeDelay(30)
+.typeString('Bienvenue sur mon portfolio !')
+.pauseFor(300)
+.deleteChars(29)
+.typeString('Je suis étudiant en informatique, passionné du développement web.')
+.start()
 
-containers[2].addEventListener("mouseenter", function(){ 
-  contents[2].style.visibility="visible"; });
-containers[2].addEventListener("mouseleave", function(){ 
-  contents[2].style.visibility="hidden"; });
+gsap.registerPlugin(ScrollTrigger);
 
-containers[3].addEventListener("mouseenter", function(){ 
-  contents[3].style.visibility="visible"; });
-containers[3].addEventListener("mouseleave", function(){ 
-  contents[3].style.visibility="hidden"; });
+//Animations de la section "about"
+
+window.addEventListener("load", () => {
+  const TL = gsap.timeline();
+
+  TL
+  .staggerTo(".title h1", 1, { top: 0, opacity: 1, ease: "back.out(8.7)" }, 0.2)
+  .staggerFrom(".about_img img", 1, { right: -500, opacity: 0, ease: "power2.out" }, 0.2, "-=1")
+  .staggerTo(".about_img img", 1, { opacity: 1}, 0.2, "-=1")
+  .staggerTo(".title h2", 1, { right: 0, opacity: 1, ease: "back.out(1.7)" }, 0.2)
+  .staggerTo(".dl_cv", 1, { opacity: 1, ease: "power2.out" }, 0.2, "-=1");
+});
+
+//Animations de la section "portfolio"
+
+var tl_portfolio = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#portfolio"
+  }
+});
+
+tl_portfolio
+.to(".c1", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)"})
+.to(".c2", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)"}, "-=0.5")
+.to(".c3", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)"})
+.to(".c4", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)"}, "-=0.5")
 
 
