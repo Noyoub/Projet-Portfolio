@@ -20,10 +20,10 @@
 
 <!-- Menu de navigation -->
 
-    <header>
+    <nav>
         <a href="#" class="logo">Port<span>folio.</span></a>
         <ul>
-            <li><a href="#about" onclick="myFunction2()">Home</a></li>
+            <li><a href="#" onclick="myFunction2()">Home</a></li>
             <li><a href="#education" onclick="myFunction2()">Studies</a></li>
             <li><a href="#skills" onclick="myFunction2()">Skills</a></li>
             <li><a href="#portfolio" onclick="myFunction2()">Projects</a></li>
@@ -31,30 +31,28 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
-    </header>
+    </nav>
 
-<!-- Section About -->
+<!-- Section Header -->
 
-    <section id="about">    
-        <div class="about_txt">
+    <header>   
+        <div class="header_content">
             <div class="title">
-                <h1><span>Lucas</span> <span class="bouillon">Bouillon</span></h1>
+                <h1>Lucas <span>Bouillon</span></h1>
                 <h2></h2>
             </div>
             <div class="button">
                 <a href="DOCS/CV.pdf" class="dl_cv" target="_blank">TÉLÉCHARGER CV</a>
             </div>
         </div>
-        <div class="about_img">
-            <img src="IMG/lucas.png" alt="photo de lucas" id="lucas_img">
-        </div>
-    </section>
+    </header>
 
 <!-- Section Education -->
 
     <section id="education">
         <div class="section_title_light">
             <h2>STU<span>DI</span>ES</h2>
+            <div class="separateur_light"></div>
         </div>
         <div class="wrapper2">
             <div class="timeline">
@@ -102,6 +100,24 @@
     <section id="skills">
         <div class="section_title_dark">
             <h2>SK<span>IL</span>LS</h2>
+            <div class="separateur_dark"></div>
+        </div>
+        <div class="skills_box">
+            <div class="responsive_box">
+                <img src="IMG/responsive_white.png" alt="photo montrant le responsive design" width="30%">
+                <h4>Développement multi-plateforme</h4>
+                <p>Compatibilité sur toutes les plateformes, ordinateurs, tablettes et smartphones.</p>
+            </div>
+            <div class="responsive_box">
+                <img src="IMG/performance_white.png" alt="photo montrant les performances du développement" width="30%">
+                <h4>Optimisation des performances</h4>
+                <p>Compressions des fichiers, chargement rapide.</p>
+            </div>
+            <div class="responsive_box">
+                <img src="IMG/seo_white.png" alt="photo montrant le responsive design" width="30%">
+                <h4>Référencement naturel SEO</h4>
+                <p>Utilisation des outils de référencement, visibilité dans les moteurs de recherche.</p>
+            </div>
         </div>
         <div class="wrapper_dev">
             <div class="html">
@@ -111,6 +127,7 @@
                 </div>
                 <div class="skill_bar"><div class="html_color"><div><p>95%</p></div></div></div>
             </div>
+
             <div class="css">
                 <div class="langage">
                     <img src="https://img.icons8.com/color/480/000000/css3.png" alt="logo css"/>
@@ -118,13 +135,15 @@
                 </div>
                 <div class="skill_bar"><div class="css_color"><div><p>90%</p></div></div></div>
             </div>
-            <div class="bootstrap">
+            
+            <div class="git">
                 <div class="langage">
-                    <img src="https://img.icons8.com/color/480/000000/bootstrap.png" alt="logo bootstrap"/>
-                    <p class="nom_langage">BOOTSTRAP</p>
+                    <img src="https://img.icons8.com/cute-clipart/128/000000/github.png" alt="logo github"/>                 
+                    <p class="nom_langage">GIT/GITHUB</p>
                 </div>
-                <div class="skill_bar"><div class="bootstrap_color"><div><p>60%</p></div></div></div>
+                <div class="skill_bar"><div class="git_color"><div><p>75%</p></div></div></div>
             </div>
+
             <div class="js">
                 <div class="langage">
                     <img src="https://img.icons8.com/color/480/000000/javascript-logo-1.png" alt="logo javascript"/>
@@ -132,26 +151,29 @@
                 </div>
                 <div class="skill_bar"><div class="js_color"><div><p>60%</p></div></div></div>
             </div>
+
+            <div class="postgresql">
+                <div class="langage">
+                    <img src="https://img.icons8.com/color/96/000000/postgreesql.png" alt="logo postgresql"/>
+                    <p class="nom_langage">POSTGRESQL</p>
+                </div>
+                <div class="skill_bar"><div class="postgresql_color"><div><p>60%</p></div></div></div>
+            </div>
+
+            <div class="bootstrap">
+                <div class="langage">
+                    <img src="https://img.icons8.com/color/480/000000/bootstrap.png" alt="logo bootstrap"/>
+                    <p class="nom_langage">BOOTSTRAP</p>
+                </div>
+                <div class="skill_bar"><div class="bootstrap_color"><div><p>50%</p></div></div></div>
+            </div>
+
             <div class="php">
                 <div class="langage">
                     <img src="https://img.icons8.com/officel/160/000000/php-logo.png" alt="logo php"/>
                     <p class="nom_langage">PHP</p>
                 </div>
                 <div class="skill_bar"><div class="php_color"><div><p>40%</p></div></div></div>
-            </div>
-            <div class="postgresql">
-                <div class="langage">
-                    <img src="https://img.icons8.com/color/96/000000/postgreesql.png" alt="logo postgresql"/>
-                    <p class="nom_langage">POSTGRESQL</p>
-                </div>
-                <div class="skill_bar"><div class="postgresql_color"><div><p>65%</p></div></div></div>
-            </div>
-            <div class="git">
-                <div class="langage">
-                    <img src="https://img.icons8.com/cute-clipart/128/000000/github.png" alt="logo github"/>                 
-                    <p class="nom_langage">GIT/GITHUB</p>
-                </div>
-                <div class="skill_bar"><div class="git_color"><div><p>75%</p></div></div></div>
             </div>
         </div>
     </section>
@@ -161,44 +183,53 @@
     <section id="portfolio">
         <div class="section_title_light">
             <h2>PROJ<span>EC</span>TS</h2>
+            <div class="separateur_light"></div>
         </div>
         <div class="portfolio_content">
             <div class="card c1">
                 <img src="IMG/travel.jpeg" alt="site agence de voyage" style="width:100%">
-                <h1>Travel Agency</h1>
+                <h3>Travel Agency</h3>
                 <p class="titre">Auteur : Lucas Bouillon</p>
                 <p>Site vitrine realisé en <span class="bold">HTML/CSS/Bootstrap</span>, dans le contexte 
                     de la formation "Développeur web" de John Taieb afin d'apprendre le HTML/CSS.</p>
-                <a href="https://travelagency.lbfocus.com/" target="_blank"><button class=".btn">Voir plus</button></p></a><p>
+                <a href="https://travelagency.lbfocus.com/" target="_blank"><button class=".btn">Voir plus</button></a>
             </div>
 
             <div class="card c2">
                 <img src="IMG/actrices.jpeg" alt="site top 5 meilleures actrices" style="width:100%">
-                <h1>Top 5 meilleures actrices</h1>
+                <h3>Top 5 meilleures actrices</h3>
                 <p class="titre">Auteur : Lucas Bouillon</p>
                 <p>Ce projet à été réalise en <span class="bold">HTML/CSS/JS/JQUERY</span>, encore une fois dans le contexte de la formation, cette fois ci pour m'initier aux événements dynamiques.</p>
-                <a href="https://top5actrices.lbfocus.com/" target="_blank"><button class=".btn">Voir plus</button></p></a><p>
+                <a href="https://top5actrices.lbfocus.com/" target="_blank"><button class=".btn">Voir plus</button></a>
             </div>
         </div>
 
         <div class="portfolio_content">
             <div class="card c3">
                 <img src="IMG/snake.jpeg" alt="site agence de voyage" style="width:100%">
-                <h1>Snake</h1>
+                <h3>Snake</h3>
                 <p class="titre">Auteur : Lucas Bouillon</p>
                 <p>Jeu snake réalisé en <span class="bold">HTML/JS</span>, une seconde fois dans le contexte de la formation "Développeur web" pour apprendre le Javascript.</p>
-                <a href="https://snake.lbfocus.com/" target="_blank"><button class=".btn">Voir plus</button></p></a><p>
+                <a href="https://snake.lbfocus.com/" target="_blank"><button class=".btn">Voir plus</button></a>
             </div>
 
             <div class="card c4">
                 <img src="IMG/lbfocus.jpeg" alt="site top 5 meilleures actrices" style="width:100%">
-                <h1>Lbfocus</h1>
+                <h3>Lbfocus</h3>
                 <p class="titre">Auteur : Lucas Bouillon</p>
                 <p>Site complet réalisé en <span class="bold">HTML/CSS/JS/PHP</span>, sans contexte particulier, simplement par plaisir et désir de progression.</p>
-                <a href="https://lbfocus.com/" target="_blank"><button class=".btn">Voir plus</button></p></a><p>
+                <a href="https://lbfocus.com/" target="_blank"><button class=".btn">Voir plus</button></a>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="reseaux">
+            <a href="https://github.com/Noyoub" target="_blank" id="gt_logo"><img src="IMG/github.png" alt="logo de github" width="30px"></a>
+            <a href="https://www.instagram.com/lb.focus_" target="_blank" id="ig_logo"><img src="IMG/instagram.png" alt="logo d'instagram" width="30px"></a>
+            <a href="https://www.linkedin.com/in/lucas-bouillon-91a75899/" target="_blank" id="ld_logo"><img src="IMG/linkedin.png" alt="logo de linkdin" width="30px"></a>
+        </div>
+        <p>© 2021 Lucas Bouillon, Tous droits réservés.</p>
+    </footer>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="script.js"></script>
 </body>

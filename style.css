@@ -19,33 +19,29 @@ ul {
   list-style: none;
 }
 
-hr.style-one {
-  overflow: visible;
-  height: 30px;
-  border-style: solid;
-  border-width: 3px 0 0 0;
-  border-radius: 20px;
-}
-
-hr.style-one:before {
-  display: block;
-  content: "";
-  height: 30px;
-  margin-top: -31px;
-  border-style: solid;
-  border-width: 0 0 1px 0;
-  border-radius: 20px;
-}
-
 .bold{
   text-transform: uppercase;
 }
 
 .section_title_light {
-  margin: 20px auto;
+  margin: 100px auto;
   font-size: 300%;
   text-align: center;
   color: #272932;
+}
+
+.separateur_dark{
+  width: 80px;
+  margin: 0 auto;
+  height: 3px;
+  background-color: white;
+}
+
+.separateur_light{
+  width: 80px;
+  margin: 0 auto;
+  height: 3px;
+  background-color: #272932;
 }
 
 .section_title_light span{
@@ -53,7 +49,7 @@ hr.style-one:before {
 }
 
 .section_title_dark {
-  margin: 20px auto;
+  margin: 100px auto;
   font-size: 300%;
   text-align: center;
   color: whitesmoke;
@@ -74,7 +70,7 @@ hr.style-one:before {
 
 /* NAVBAR */
 
-header{
+nav{
   display: flex;
   position: fixed;
   background-color: #272932;
@@ -89,19 +85,18 @@ header{
   z-index: 999;
 }
 
-header .logo{
+nav .logo{
    font-weight: 700;
    font-size: 130%;
    color: whitesmoke;
    letter-spacing: 2px;
-   transition: 0.6s;
 }
 
-header .logo span {
+nav .logo span {
   color: #9e90a2;
 }
 
-header ul{
+nav ul{
   position: relative;
   display: flex;
   justify-content: center;
@@ -109,11 +104,11 @@ header ul{
   z-index: 1;
 }
 
-header ul li{
+nav ul li{
   position: relative;
 }
 
-header ul li a{
+nav ul li a{
   display: inline-block;
   position: relative;
   margin: 0 15px;
@@ -123,11 +118,11 @@ header ul li a{
   transition: 0.6s;
 }
 
-header ul li a:hover{
+nav ul li a:hover{
   background: none;
 }
 
-header ul li a::after{
+nav ul li a::after{
   content: '';
   display: block;
   width: 0;
@@ -136,105 +131,110 @@ header ul li a::after{
   transition: width 0.3s;
 }
 
-header ul li a:hover::after{
+nav ul li a:hover::after{
   width: 100%;
 }
 
-header a.icon{
+nav a.icon{
   display: none;
   position: absolute;
   right: 16px;
   top: 16px;
 }
 
+
 @media screen and (max-width: 1080px){
 
-  header{
+  nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   
-  header ul{
+  nav ul{
     display: none;
     flex-direction: column;
     min-height: 100vh;
     margin-right: 15%;
   }
 
-  header ul li{
+  nav ul li{
     margin: 20px auto;
   }
 
-  header ul li a{
+  nav ul li a{
     font-size: 30px;
   }
 
-  header .logo{
+  nav .logo{
     position: absolute;
     top: 16px;
     left: 16px;
   }
 
-  header a.icon {
+  nav a.icon {
     z-index: 1;
     color: whitesmoke;
     display: block;
   }
 
-  header a.icon:hover{
+  nav a.icon:hover{
     color: #b6c2d9;
   }
 }
 
-/* ABOUT */
+/* HEADER */
 
-#about {
-  width: auto;
+header {
+  background: url('IMG/lucas.png') no-repeat;
+  background-position: bottom right;
+  background-size: 40%;
+  align-items: center;
   min-height: 100vh;
-  display: flex;
-  justify-content: flex-end;
   background-color: #272932;
+  padding: 10% 10%;
 }
 
-.about_txt {
+.header_content {
   display: flex;
   align-items: baseline;
   flex-direction: column;
   text-transform: uppercase;
-  margin: 250px 0 0 30px;
-  padding-bottom: 30px;
-  z-index: 1;
 }
 
-.title h1 {
+header img {
+  position: absolute;
+  max-height: 80%;
+  max-width: 80%;
+  opacity: 0;
+  bottom: 0;
+  right: 0;
+}
+
+h1 {
   font-size: 600%;
+  font-family: "Courier New", Courier, monospace;
   color: whitesmoke;
   position: relative;
   opacity: 0;
   top: -50px;
 }
 
-.title h1 span {
+h1 span {
   font-family: "Courier New", Courier, monospace;
-}
-
-.bouillon {
   color: #b6c2d9;
 }
 
 .title h2 {
   color: whitesmoke;
-  /*opacity: 0;
-  position: relative;
-  right: 150px;*/
+  z-index: 4;
 }
 
 .dl_cv {
   display: block;
   width: 220px;
   text-align: center;
-  margin: 10px auto;
+  margin-top: 45px;
   padding: 20px;
   color: white;
   opacity: 0;
@@ -247,46 +247,18 @@ header a.icon{
   color: #272932;
 }
 
-.about_img {
-  width: 40%;
-  position: relative;
-}
-
-.about_img img {
-  filter: drop-shadow(5px 0 0 black);
-  position: absolute;
-  width: 100%;
-  opacity: 0;
-  bottom: 0;
-  right: 0;
-}
-
-@media screen and (max-width: 1036px) {
-  #about {
-    flex-direction: column;
-    min-height: auto;
-  }
-
-  .about_img {
-    width: 60%;
-    transform: translateX(66%);
-  }
-
-  .about_txt{
-    margin: 100px 15px 250px 15px;
-  }
-
-  .dl_cv {
-    transform: translateY(60%);
-  }
-
-  .title h1 {
+@media screen and (max-width: 600px){
+  h1{
     font-size: 300%;
   }
-
-  .title h2 {
-    font-size: 100%;
+  .title h2{
+    font-size: 20px;
   }
+
+  header{
+    background-size: 90%;
+  }
+
 }
 
 /* EDUCATION */
@@ -427,15 +399,49 @@ header a.icon{
   width: auto;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 20px 0 80px;
 }
 
-.skill_title {
-  margin: 20px auto;
-  font-size: 20px;
-  width: 50%;
+.skills_box{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px 10%;
+}
+
+.responsive_box{
+  display: flex;
+  background-color: whitesmoke;
+  padding: 30px;
+  width: 310px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.responsive_box:hover{
+  filter: invert(100%);
+}
+
+.responsive_box h4{
   text-align: center;
+}
+
+.skills_box p{
   color: whitesmoke;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1080px){
+  .responsive_box:hover{
+    filter: invert(0);
+  }
+  .skills_box p{
+    color: black;
+  }
 }
 
 .nom_langage {
@@ -463,7 +469,7 @@ header a.icon{
 .php_color,
 .postgresql_color,
 .git_color {
-  height: 45px;
+  height: 35px;
 }
 
 .html_color,
@@ -477,8 +483,8 @@ header a.icon{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #272932;
-  background-color: #b6c2d9;
+  color: white;
+  font-weight: 900;
 }
 
 .html_color p,
@@ -489,44 +495,46 @@ header a.icon{
 .php_color p,
 .postgresql_color p,
 .git_color p {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .skill_bar {
-  background-color: whitesmoke;
-}
-
-.skill_bar h3 {
-  color: whitesmoke;
-  text-align: center;
+  background-color: lightgrey;
 }
 
 .html_color {
   width: 95%;
+  background-color: #fe5f00;
 }
 
 .css_color {
   width: 90%;
+  background-color: #0191e2;
 }
 
 .js_color {
   width: 60%;
+  background-color: #e49a1c;
 }
 
 .bootstrap_color {
-  width: 60%;
+  width: 50%;
+  background-color: #592aae;
 }
 
 .php_color {
   width: 40%;
+  background-color: #006400;
 }
 
 .postgresql_color {
-  width: 65%;
+  width: 60%;
+  background-color: #0169b6;
 }
 
 .git_color {
   width: 75%;
+  background-color: black;
 }
 
 .langage {
@@ -548,21 +556,7 @@ header a.icon{
   min-height: 100vh;
   background-color: whitesmoke;
   margin: 0 auto;
-  padding: 30px 0;
-}
-
-.portfolio_title {
-  margin: 20px auto;
-  font-size: 20px;
-  width: 50%;
-  text-align: center;
-  color: #272932;
-}
-
-@media screen and (max-width: 550px) {
-  .portfolio_title {
-    width: 90%;
-  }
+  padding: 20px 0;
 }
 
 .portfolio_content {
@@ -580,6 +574,10 @@ header a.icon{
   opacity: 0;
   text-align: center;
   font-family: arial;
+}
+
+.card h3{
+  font-size: 150%;
 }
 
 .card p{
@@ -619,9 +617,9 @@ button {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
+  padding: 15px;
+  color: black;
+  background-color: white;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -629,6 +627,39 @@ button {
 }
 
 button:hover {
-  background-color: grey;
+  background-color: #272932;
+  color: white;
+}
+
+/* FOOTER */
+
+footer{
+  background-color: #272932;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 20% 20px;
+}
+
+footer p{
+  color: whitesmoke;
+  font-size: 13px;
+}
+
+.reseaux{
+  margin: 20px auto 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reseaux a{
+  margin: 0 10px;
+  transform: translateY(18px);
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.reseaux img:hover{
+  filter: invert(50%);
 }
 
