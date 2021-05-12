@@ -1,5 +1,4 @@
-html,
-body {
+html,body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -83,7 +82,7 @@ nav{
   flex-wrap: wrap;
   transition: 0.6s;
   padding: 25px 50px;
-  z-index: 999;
+  z-index: 998;
 }
 
 nav .logo{
@@ -569,6 +568,8 @@ h1 span {
 }
 
 .card {
+  position: relative;
+  transform: translateY(150px);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 500px;
   margin: 30px 30px;
@@ -583,30 +584,6 @@ h1 span {
 
 .card p{
   margin: 20px 20px;
-}
-
-.c1 {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-}
-
-.c2 {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-}
-
-.c3 {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-}
-
-.c4 {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
 }
 
 .titre {
