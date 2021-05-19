@@ -11,6 +11,12 @@ html,body {
   user-select: none;
 }
 
+hr{
+  height: 2px;
+  background-color: white;
+  border: none;
+}
+
 a {
   text-decoration: none;
 }
