@@ -2,7 +2,7 @@ html,body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 * {
@@ -27,7 +27,7 @@ ul {
   margin: 100px auto;
   font-size: 300%;
   text-align: center;
-  color: #272932;
+  color: #FFC961;
 }
 
 .separateur_dark{
@@ -41,22 +41,22 @@ ul {
   width: 80px;
   margin: 0 auto;
   height: 3px;
-  background-color: #272932;
+  background-color: #FFC961;
 }
 
 .section_title_light span{
-  color: #9e90a2;
+  color: black;
 }
 
 .section_title_dark {
   margin: 100px auto;
   font-size: 300%;
   text-align: center;
-  color: whitesmoke;
+  color: white;
 }
 
 .section_title_dark span{
-  color: #9e90a2;
+  color: black;
 }
 
 @media screen and (max-width: 800px){
@@ -73,7 +73,7 @@ ul {
 nav{
   display: flex;
   position: fixed;
-  background-color: #272932;
+  background-color: #FFC961;
   width: 100%;
   top: 0;
   left: 0 ;
@@ -88,12 +88,12 @@ nav{
 nav .logo{
    font-weight: 700;
    font-size: 130%;
-   color: whitesmoke;
+   color: white;
    letter-spacing: 2px;
 }
 
 nav .logo span {
-  color: #9e90a2;
+  color: black;
 }
 
 nav ul{
@@ -112,7 +112,7 @@ nav ul li a{
   display: inline-block;
   position: relative;
   margin: 0 15px;
-  color: whitesmoke;
+  color: white;
   letter-spacing: 2px;
   font-weight: 500px;
   transition: 0.6s;
@@ -127,7 +127,7 @@ nav ul li a::after{
   display: block;
   width: 0;
   height: 2px;
-  background-color: whitesmoke;
+  background-color: white;
   transition: width 0.3s;
 }
 
@@ -174,24 +174,24 @@ nav a.icon{
 
   nav a.icon {
     z-index: 1;
-    color: whitesmoke;
+    color: white;
     display: block;
   }
 
   nav a.icon:hover{
-    color: #b6c2d9;
+    color: black;
   }
 }
 
 /* HEADER */
 
 header {
-  background: url('IMG/lucas.png') no-repeat;
+  background: url('IMG/lucas2.png') no-repeat;
   background-position: bottom right;
-  background-size: 40%;
+  background-size: 50%;
   align-items: center;
-  min-height: 100vh;
-  background-color: #272932;
+  min-height: 80vh;
+  background-color: #FFC961;
   padding: 10% 10%;
 }
 
@@ -202,19 +202,10 @@ header {
   text-transform: uppercase;
 }
 
-header img {
-  position: absolute;
-  max-height: 80%;
-  max-width: 80%;
-  opacity: 0;
-  bottom: 0;
-  right: 0;
-}
-
 h1 {
   font-size: 600%;
   font-family: "Courier New", Courier, monospace;
-  color: whitesmoke;
+  color: white;
   position: relative;
   opacity: 0;
   top: -50px;
@@ -222,11 +213,11 @@ h1 {
 
 h1 span {
   font-family: "Courier New", Courier, monospace;
-  color: #b6c2d9;
+  color: black;
 }
 
 .title h2 {
-  color: whitesmoke;
+  color: white;
   z-index: 4;
 }
 
@@ -238,13 +229,13 @@ h1 span {
   padding: 20px;
   color: white;
   opacity: 0;
-  border: 2px solid whitesmoke;
+  border: 2px solid white;
   transition: 0.2s ease-in-out;
 }
 
 .dl_cv:hover {
-  background-color: whitesmoke;
-  color: #272932;
+  background-color: white;
+  color: #FFC961;
 }
 
 @media screen and (max-width: 600px){
@@ -266,7 +257,7 @@ h1 span {
 #education {
   width: auto;
   min-height: 100vh;
-  background-color: whitesmoke;
+  background-color: white;
   margin: 0 auto;
   padding: 40px 0;
 }
@@ -291,7 +282,7 @@ h1 span {
   content: "";
   position: absolute;
   width: 6px;
-  background-color: #272932;
+  background-color: #FFC961;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -311,8 +302,8 @@ h1 span {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: #272932;
-  border: 4px solid whitesmoke;
+  background-color: #FFC961;
+  border: 4px solid white;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -334,9 +325,9 @@ h1 span {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #272932;
+  border: medium solid #FFC961;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #272932;
+  border-color: transparent transparent transparent #FFC961;
 }
 
 .right::before {
@@ -347,9 +338,9 @@ h1 span {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #272932;
+  border: medium solid #FFC961;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #272932 transparent transparent;
+  border-color: transparent #FFC961 transparent transparent;
 }
 
 .right::after {
@@ -358,11 +349,16 @@ h1 span {
 
 .content {
   padding: 20px 30px;
-  background-color: #272932;
-  color: whitesmoke;
+  background-color: #FFC961;
+  color: white;
   position: relative;
   border-radius: 6px;
 }
+
+.content h2, h4{
+  color: black;
+}
+
 
 @media screen and (max-width: 600px) {
   .timeline::after {
@@ -377,9 +373,9 @@ h1 span {
 
   .container::before {
     left: 60px;
-    border: medium solid #272932;
+    border: medium solid #FFC961;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #272932 transparent transparent;
+    border-color: transparent #FFC961 transparent transparent;
   }
 
   .left::after,
@@ -395,7 +391,7 @@ h1 span {
 /* SKILLS */
 
 #skills {
-  background-color: #272932;
+  background-color: #FFC961;
   width: auto;
   min-height: 100vh;
   margin: 0 auto;
@@ -411,7 +407,7 @@ h1 span {
 
 .responsive_box{
   display: flex;
-  background-color: whitesmoke;
+  background-color: white;
   padding: 30px;
   width: 310px;
   justify-content: center;
@@ -429,7 +425,7 @@ h1 span {
 }
 
 .skills_box p{
-  color: whitesmoke;
+  color: white;
   text-align: center;
   font-size: 13px;
   font-weight: 700;
@@ -446,7 +442,7 @@ h1 span {
 
 .nom_langage {
   font-size: 20px;
-  color: whitesmoke;
+  color: white;
 }
 
 @media screen and (max-width: 550px) {
@@ -554,7 +550,7 @@ h1 span {
 #portfolio {
   width: auto;
   min-height: 100vh;
-  background-color: whitesmoke;
+  background-color: white;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -605,21 +601,21 @@ button {
 }
 
 button:hover {
-  background-color: #272932;
+  background-color: #FFC961;
   color: white;
 }
 
 /* FOOTER */
 
 footer{
-  background-color: #272932;
+  background-color: #FFC961;
   margin: 0 auto;
   text-align: center;
   padding: 50px 20% 20px;
 }
 
 footer p{
-  color: whitesmoke;
+  color: white;
   font-size: 13px;
 }
 
@@ -638,6 +634,6 @@ footer p{
 }
 
 .reseaux img:hover{
-  filter: invert(50%);
+  filter: invert(100%);
 }
 
