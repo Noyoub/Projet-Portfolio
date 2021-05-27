@@ -258,6 +258,12 @@ h1 span {
 
 }
 
+@media screen and (min-width: 1850px){
+  header{
+    background-size: 30%;
+  }
+}
+
 /* EDUCATION */
 
 #education {
