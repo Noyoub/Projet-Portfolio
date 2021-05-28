@@ -5,9 +5,9 @@ html,body {
   background-color: white;
 }
 
-* {
+*{
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   user-select: none;
 }
 
@@ -23,10 +23,6 @@ a {
 
 ul {
   list-style: none;
-}
-
-.bold{
-  text-transform: uppercase;
 }
 
 .section_title_light {
@@ -237,6 +233,7 @@ h1 span {
   opacity: 0;
   border: 2px solid white;
   transition: 0.2s ease-in-out;
+
 }
 
 .dl_cv:hover {
@@ -453,8 +450,9 @@ h1 span {
 }
 
 .nom_langage {
-  font-size: 20px;
-  color: white;
+  font-size: 18px;
+  color: black;
+
 }
 
 @media screen and (max-width: 550px) {
@@ -468,30 +466,33 @@ h1 span {
   margin: 0 auto;
 }
 
-.skill_bar,
-.html_color,
-.css_color,
-.js_color,
-.react_color,
-.bootstrap_color,
-.php_color,
-.postgresql_color,
-.git_color {
-  height: 35px;
+.wrapper_dev h3{
+
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+
+.skill_bar{
+  height: 15px;
 }
 
 .html_color,
 .css_color,
 .js_color,
 .react_color,
-.bootstrap_color,
+.c_color,
 .php_color,
 .postgresql_color,
-.git_color {
+.git_color,
+.windows_color,
+.linux_color {
   display: flex;
+  height: 15px;
   justify-content: center;
   align-items: center;
   color: white;
+  background-color: black;
   font-weight: 900;
 }
 
@@ -499,50 +500,53 @@ h1 span {
 .css_color p,
 .js_color p,
 .react_color p,
-.bootstrap_color p,
+.c_color p,
 .php_color p,
 .postgresql_color p,
-.git_color p {
+.git_color p,
+.windows_color p,
+.linux_color p{
   font-size: 15px;
 }
 
 .skill_bar {
-  background-color: lightgrey;
+  background-color: white;
 }
 
 .html_color {
   width: 95%;
-  background-color: #fe5f00;
 }
 
 .css_color {
   width: 90%;
-  background-color: #0191e2;
 }
 
 .js_color {
-  width: 60%;
-  background-color: #e49a1c;
+  width: 70%;
 }
 
-.bootstrap_color {
-  width: 50%;
-  background-color: #592aae;
+.c_color {
+  width: 90%;
 }
 
 .php_color {
-  width: 40%;
-  background-color: #006400;
+  width: 50%;
 }
 
 .postgresql_color {
   width: 60%;
-  background-color: #0169b6;
 }
 
 .git_color {
   width: 75%;
-  background-color: black;
+}
+
+.windows_color{
+  width: 95%;
+}
+
+.linux_color{
+  width: 85%;
 }
 
 .langage {
@@ -593,6 +597,7 @@ h1 span {
 
 .card p{
   margin: 20px 20px;
+
 }
 
 .titre {
@@ -611,6 +616,7 @@ button {
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+
 }
 
 button:hover {
