@@ -486,7 +486,7 @@ h1 span {
 .postgresql_color,
 .git_color,
 .windows_color,
-.linux_color {
+.linux_color, .wordpress_color {
   display: flex;
   height: 15px;
   justify-content: center;
@@ -505,7 +505,7 @@ h1 span {
 .postgresql_color p,
 .git_color p,
 .windows_color p,
-.linux_color p{
+.linux_color p, .wordpress_color p{
   font-size: 15px;
 }
 
@@ -521,6 +521,10 @@ h1 span {
   width: 90%;
 }
 
+.wordpress_color{
+  width: 80%;
+}
+
 .js_color {
   width: 70%;
 }
@@ -530,7 +534,7 @@ h1 span {
 }
 
 .php_color {
-  width: 50%;
+  width: 60%;
 }
 
 .postgresql_color {
@@ -584,10 +588,41 @@ h1 span {
   transform: translateY(150px);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 500px;
+  min-height: 650px;
   margin: 30px 30px;
   opacity: 0;
   text-align: center;
   font-family: arial;
+}
+
+@media screen and (max-width: 500px){
+  .card{
+    min-height: 0;
+  }
+
+  .c1{
+    height: 500px;
+  }
+
+  .c2{
+    height: 560px;
+  }
+
+  .c3{
+    height: 520px;
+  }
+
+  .c4{
+    height: 550px;
+  }
+
+  .c5{
+    height: 780px;
+  }
+
+  .c6{
+    height: 690px;
+  }
 }
 
 
@@ -596,8 +631,7 @@ h1 span {
 }
 
 .card p{
-  margin: 20px 20px;
-
+  margin: 20px 20px 0;
 }
 
 .titre {
@@ -606,6 +640,9 @@ h1 span {
 }
 
 button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   border: none;
   outline: 0;
   display: inline-block;
@@ -616,7 +653,6 @@ button {
   cursor: pointer;
   width: 100%;
   font-size: 18px;
-
 }
 
 button:hover {
