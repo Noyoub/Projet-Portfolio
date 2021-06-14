@@ -68,7 +68,7 @@ var tl_portfolio = gsap.timeline({
 
 tl_portfolio
 .to(".c1", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)"})
-.to(".c2", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)"}, "-=0.5")
+.to(".c2", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)"})
 .to(".c3", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)"})
 .to(".c4", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)"})
 .to(".c5", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)"})
