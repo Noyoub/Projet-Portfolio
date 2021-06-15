@@ -62,7 +62,7 @@ for (let index = 0; index < descrips_skills.length; index++) {
 
 var tl_portfolio = gsap.timeline({
   scrollTrigger: {
-    trigger: "#portfolio"
+    trigger: ".portfolio_content"
   }
 });
 
@@ -73,6 +73,7 @@ tl_portfolio
 .to(".c4", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)"})
 .to(".c5", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)"})
 .to(".c6", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)"})
+.to(".c7", { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)"})
 
 //Animations de la section "footer
 
